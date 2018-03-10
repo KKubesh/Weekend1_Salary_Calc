@@ -37,7 +37,7 @@ function calcInputs() {
 function totalFill() {
   // Adjust Total Monthly cost
   $('#totalMonthly').empty();
-  $('#totalMonthly').append(totalCalc);
+  $('#totalMonthly').append(totalCalc.toFixed(2));
   valRedText();
 }
 
