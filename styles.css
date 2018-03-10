@@ -1,3 +1,24 @@
-table, tr, td {
-  background-color: yellow;
+table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+
+table {
+  width: 50%;
+}
+
+th {
+  height: 30px;
+  background: green;
+}
+
+td {
+  text-align: left;
+  padding-left: 10px;
+}
+
+#centerCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
