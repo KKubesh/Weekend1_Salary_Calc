@@ -58,7 +58,7 @@ function delEmpBtn() {
 }
 
 function delEmp() {
-  console.log($('table'));
+  console.log($('#delEmpBtn').parent().parent());
 }
 
 function totalFill() {
