@@ -2,6 +2,7 @@
 $(document).ready(readyNow);
 
 let totalCalc = 0;
+let empArray = [];
 
 function readyNow() {
   submitBtnClick();
@@ -22,16 +23,34 @@ function pushInput(){
   // Pushes the values into the table
   let first = $('#firstN').val();
   let last = $('#lastN').val();
-  let id = $('workID').val();
+  let id = $('#workID').val();
   let title = $('#empTitle').val();
   let salary = $('#annSal').val();
-  $('thead').append('<tr><td>'+first+'</td><td>'+last+'</td><td>'+id+'</td><td>'+title+'</td><td>'+salary+'</th>');// Pushes the values into the table
+  $('table').append('<tr><td>'+first+'</td><td>'+last+'</td><td>'+id+'</td><td>'+title+'</td><td>'+salary+'</th></tr>');// Pushes the values into the table
+  newEmployee(first, last, id, title, salary);
 }
 
 function calcInputs() {
   // Calculates the Input values to place in Total Monthly
   totalCalc += $('#annSal').val() / 12;
   totalFill();
+}
+
+function newEmployee(first, last, id, title, salary) {
+  let worker = new Employee (first, last, id, title, salary);
+  empArray.push(worker);
+  console.log(worker);
+}
+
+
+class Employee {
+  constructor( firstN, lastN, workID, empTitle, annSal ){
+    this.first = firstN;
+    this.last = lastN;
+    this.id = workID;
+    this.title = empTitle;
+    this.salary = annSal;
+  }
 }
 
 function totalFill() {
