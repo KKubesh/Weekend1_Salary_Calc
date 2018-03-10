@@ -56,11 +56,18 @@ class Employee {
 
 function delEmpBtn() {
   $('table').on('click', '#delEmpBtn', delEmp);
+  // $('table').on('click', '#delEmpBtn', reCalc);
 }
 
 function delEmp() {
   $(this).parent().parent().remove();
 }
+
+// function reCalc(){
+//   console.log(($(this).parent().prev()).data({innerText: "salary"}));
+//   totalCalc -= $(this).parent().prev();
+//   totalFill();
+// }
 
 function totalFill() {
   // Adjust Total Monthly cost
