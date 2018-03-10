@@ -6,6 +6,7 @@ let empArray = [];
 
 function readyNow() {
   submitBtnClick();
+  delEmpBtn();
 }
 
 function submitBtnClick() {
@@ -54,11 +55,11 @@ class Employee {
 }
 
 function delEmpBtn() {
-  $('#delEmpBtn').on('click', delEmp);
+  $('table').on('click', '#delEmpBtn', delEmp);
 }
 
 function delEmp() {
-  console.log($('#delEmpBtn').parent().parent());
+  $(this).parent().parent().remove();
 }
 
 function totalFill() {
