@@ -15,11 +15,11 @@ function submitBtnClick() {
 
 function takeInput() {
   // Receives the values and runs them through these functions
-  pushInput();
+  appInput();
   calcInputs();
 }
 
-function pushInput(){
+function appInput(){
   // Pushes the values into the table
   let first = $('#firstN').val();
   let last = $('#lastN').val();
@@ -41,7 +41,6 @@ function newEmployee(first, last, id, title, salary) {
   empArray.push(worker);
   console.log(worker);
 }
-
 
 class Employee {
   constructor( firstN, lastN, workID, empTitle, annSal ){
