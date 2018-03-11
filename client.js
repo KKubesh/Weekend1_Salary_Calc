@@ -28,7 +28,7 @@ function appInput(){
   let title = $('#empTitle').val();
   let salary = $('#annSal').val();
   $('table').append('<tr><td>'+first+'</td><td>'+last+'</td><td>'+id+'</td><td>'+title+'</td><td>'+salary+'</th><th id=invis><button id="delEmpBtn">Remove</button><th></tr>');// Pushes the values into the table
-  newEmployee(first, last, id, title, salary); // function creates a new object of the inputs
+  newEmployee(first, last, id, title, salary); // function creates a new class of the inputs
   delEmpBtn(); // Adds property of function to the button just created
 }
 

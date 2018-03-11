@@ -4,12 +4,12 @@ table, th, td {
 }
 
 table {
-  width: 50%;
+  width: 100%;
 }
 
 th {
   height: 30px;
-  background: green;
+  background: #ABD6FB;
 }
 
 td {
@@ -17,12 +17,38 @@ td {
   padding-left: 10px;
 }
 
-#centerCon {
+.centerCon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#invis {
+.invis {
   background: none;
+}
+
+body {
+  margin: auto;
+  background-image: url("https://www.morganmckinley.com.hk/sites/morganmckinley.com.hk/files/styles/large/public/Stock%20Market.jpg");
+}
+
+input {
+  width: 25%;
+  padding: 5px;
+}
+
+.infoSpace {
+  background-color: #33548F;
+  width: 80%;
+  border: 3px solid #ABD6FB;
+  margin: 50px auto;
+}
+
+.centAll {
+  width: 90%;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: #12192C
 }
