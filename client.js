@@ -22,7 +22,7 @@ function takeInput() {
   let title = $('#empTitle').val();
   let salary = $('#annSal').val();
   // Checks if all inputs are filled in with some value
-  if (first == '', last == '', id == '', title == '', salary == ''){
+  if (salary === '' || first === '' || last === '' || id === '' || title === '' ){
     return alert('Appears you have not filled out the form.');
     // Stops all actions because of inputs were empty
   }
