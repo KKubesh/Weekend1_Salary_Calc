@@ -38,7 +38,7 @@ function appInput(){
   let id = $('#workID').val();
   let title = $('#empTitle').val();
   let salary = $('#annSal').val();
-  $('table').append('<tr><td>'+first+'</td><td>'+last+'</td><td>'+id+'</td><td>'+title+'</td><td>'+salary+'</th><th id=invis><button id="delEmpBtn">Remove</button><th></tr>');// Pushes the values into the table
+  $('table').append('<tr><td>'+first+'</td><td>'+last+'</td><td>'+id+'</td><td>'+title+'</td><td>'+salary+'</th><th id=invis><button id="delEmpBtn">Remove</button></th></tr>');// Pushes the values into the table
   newEmployee(first, last, id, title, salary); // function creates a new class of the inputs
   delEmpBtn(); // Adds property of function to the button just created
 }
@@ -47,6 +47,14 @@ function calcInputs() {
   // Calculates the Input values to place in Total Monthly
   totalCalc += $('#annSal').val() / 12;
   totalFill();
+}
+
+function clearInputs(){
+  $('#firstN').val("");
+  $('#lastN').val("");
+  $('#workID').val("");
+  $('#empTitle').val("");
+  $('#annSal').val("");
 }
 
 function newEmployee(first, last, id, title, salary) {
