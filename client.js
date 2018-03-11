@@ -16,8 +16,19 @@ function submitBtnClick() {
 
 function takeInput() {
   // Receives the values and runs them through these functions
+  let first = $('#firstN').val();
+  let last = $('#lastN').val();
+  let id = $('#workID').val();
+  let title = $('#empTitle').val();
+  let salary = $('#annSal').val();
+  // Checks if all inputs are filled in with some value
+  if (first == '', last == '', id == '', title == '', salary == ''){
+    return alert('Appears you have not filled out the form.');
+    // Stops all actions because of inputs were empty
+  }
   appInput();
   calcInputs();
+  clearInputs();
 }
 
 function appInput(){
