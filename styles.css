@@ -9,12 +9,14 @@ table {
 
 th {
   height: 30px;
-  background: #ABD6FB;
+  background: #2146A8;
+  color: #BCDBFC;
 }
 
 td {
   text-align: left;
   padding-left: 10px;
+  background-color: white;
 }
 
 .centerCon {
@@ -23,8 +25,9 @@ td {
   justify-content: center;
 }
 
-.invis {
-  background: none;
+#invis {
+  color: #BCDBFC;
+  background: #192F63;
 }
 
 body {
@@ -38,7 +41,7 @@ input {
 }
 
 .infoSpace {
-  background-color: #33548F;
+  background-color: #29428b;
   width: 80%;
   border: 3px solid #ABD6FB;
   margin: 50px auto;
@@ -49,6 +52,12 @@ input {
   margin: auto;
 }
 
-h1, h2, h3 {
-  color: #12192C
+h1, h2, h3, .totalMonthly {
+  color: #ABD6FB;
+}
+
+#delEmpBtn {
+  color: #ABD6FB;
+  background: #192F63;
+  box-shadow: 0 1px 5px #ABD6FB;
 }
