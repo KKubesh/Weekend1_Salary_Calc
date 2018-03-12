@@ -1,6 +1,7 @@
 table, th, td {
    border: 1px solid black;
    border-collapse: collapse;
+   margin: auto;
 }
 
 table {
@@ -60,4 +61,8 @@ h1, h2, h3, .totalMonthly {
   color: #ABD6FB;
   background: #192F63;
   box-shadow: 0 1px 5px #ABD6FB;
+}
+
+#totalMonthly {
+  color: #ABD6FB;
 }
